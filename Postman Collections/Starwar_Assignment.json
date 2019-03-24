@@ -102,7 +102,7 @@
           "mode": "raw",
           "raw": ""
         },
-        "url": "http://swapi.co/api/planets/{{int}}"
+        "url": "{{url}}planets/{{int}}"
       },
       "response": []
     },
@@ -144,15 +144,11 @@
           "raw": ""
         },
         "url": {
-          "raw": "https://swapi.co/api/people/?search=Quarsh Panaka",
-          "protocol": "https",
+          "raw": "{{url}}people/?search=Quarsh Panaka",
           "host": [
-            "swapi",
-            "co"
+            "{{url}}people"
           ],
           "path": [
-            "api",
-            "people",
             ""
           ],
           "query": [
@@ -260,7 +256,7 @@
   ],
   "variable": [
     {
-      "id": "9bbfc649-7783-461e-8fff-87c2c1628be5",
+      "id": "174e78c2-8baa-425f-bafe-a57e0c0c92e2",
       "key": "url",
       "value": "",
       "type": "string",
