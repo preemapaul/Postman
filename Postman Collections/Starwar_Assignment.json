@@ -216,15 +216,11 @@
           "raw": ""
         },
         "url": {
-          "raw": "https://swapi.co/api/planets/?search=Alderaan",
-          "protocol": "https",
+          "raw": "{{url}}planets/?search=Alderaan",
           "host": [
-            "swapi",
-            "co"
+            "{{url}}planets"
           ],
           "path": [
-            "api",
-            "planets",
             ""
           ],
           "query": [
@@ -238,6 +234,37 @@
         "description": "This request searches for the details of a specific Starwar Planet.\n\nThe result should contain the details of requested Planet \n\nTest verifies that the name of the planet is same as that of the requested\n\n\n\n"
       },
       "response": []
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "dffdceed-4f13-4aef-8636-64b5a8f93be4",
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "id": "52c5d89f-9bc7-4c55-a927-3ccf9379a4e5",
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "id": "9bbfc649-7783-461e-8fff-87c2c1628be5",
+      "key": "url",
+      "value": "",
+      "type": "string",
+      "description": ""
     }
   ]
 }
