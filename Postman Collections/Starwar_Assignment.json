@@ -1,0 +1,243 @@
+{
+  "info": {
+    "_postman_id": "f1825656-a82d-4d97-808b-4ee5319d29d4",
+    "name": "Starwar Assignment",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "_postman_id": "2803a8cd-c139-4d95-9ca0-c8d2047540ce",
+      "name": "List of Characters",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "ff461b28-cdc9-47d8-8ebf-80858f72e237",
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": "https://swapi.co/api/people/",
+        "description": "Request has to retrieve all the Star war characters"
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "b54dfc11-3e81-495a-ad8f-4b99cb9ec2a6",
+      "name": "Details of Specific Star war Character",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "e40bddf3-9466-4359-9c99-c28676ce28a1",
+            "exec": [
+              "pm.globals.set(\"int\", _.random(0, 87));",
+              "//console.log(int);",
+              "//pm.globals.get(int);",
+              "//console.log(int);"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": "https://swapi.co/api/people/{{int}}"
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "3fc5a3c7-d20b-4006-b60f-364801da8a33",
+      "name": "List of Starwar Planets",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": "http://swapi.co/api/planets/"
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "37766b6d-b9c9-4806-8a15-f63857f860d4",
+      "name": "Details of Planets",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "7aa6d88e-bb32-480c-b02e-6955acbf937c",
+            "exec": [
+              "pm.globals.set(\"int1\", _.random(0, 61));",
+              "//console.log(int);",
+              "//pm.globals.get(int);",
+              "//console.log(int);"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": "http://swapi.co/api/planets/{{int}}"
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "67b44c87-2663-4427-abc7-98e8b5040225",
+      "name": "Search for specific Character",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "0e3ec5b2-189c-4f6d-9c4e-9f2845d96996",
+            "exec": [
+              "pm.test(\"Request for search a character is success\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "",
+              "let jsonData = pm.response.json();",
+              "",
+              "pm.test(\"Single character details returned\", function () {",
+              "    pm.expect(jsonData.count).to.eql(1);",
+              "    ",
+              "});",
+              "",
+              "pm.test(\"Name of the character is Quarsh Panaka\", function () {",
+              "    ",
+              "    pm.expect(jsonData.results[0].name).to.eql('Quarsh Panaka');",
+              "});",
+              ""
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "https://swapi.co/api/people/?search=Quarsh Panaka",
+          "protocol": "https",
+          "host": [
+            "swapi",
+            "co"
+          ],
+          "path": [
+            "api",
+            "people",
+            ""
+          ],
+          "query": [
+            {
+              "key": "search",
+              "value": "Quarsh Panaka",
+              "equals": true
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "92da19c9-cdba-4f5c-83e3-b2a4c0d17a48",
+      "name": "Search for specific Planet",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "a50b8144-ab96-4f90-88d3-ca8cc86b3008",
+            "exec": [
+              ""
+            ],
+            "type": "text/javascript"
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "3acdf7ab-921f-4d3b-9882-98421890c9a9",
+            "exec": [
+              "",
+              "pm.test(\"Request for search a planet is success\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "",
+              "let jsonData = pm.response.json();",
+              "",
+              "pm.test(\"Single planet details returned\", function () {",
+              "    pm.expect(jsonData.count).to.eql(1);",
+              "    ",
+              "});",
+              "",
+              "pm.test(\"Name of the planet is Alderaan\", function () {",
+              "    ",
+              "    pm.expect(jsonData.results[0].name).to.eql('Alderaan');",
+              "});",
+              "",
+              ""
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "https://swapi.co/api/planets/?search=Alderaan",
+          "protocol": "https",
+          "host": [
+            "swapi",
+            "co"
+          ],
+          "path": [
+            "api",
+            "planets",
+            ""
+          ],
+          "query": [
+            {
+              "key": "search",
+              "value": "Alderaan",
+              "equals": true
+            }
+          ]
+        },
+        "description": "This request searches for the details of a specific Starwar Planet.\n\nThe result should contain the details of requested Planet \n\nTest verifies that the name of the planet is same as that of the requested\n\n\n\n"
+      },
+      "response": []
+    }
+  ]
+}
