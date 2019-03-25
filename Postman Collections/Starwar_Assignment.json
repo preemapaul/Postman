@@ -48,8 +48,18 @@
             "id": "e40bddf3-9466-4359-9c99-c28676ce28a1",
             "exec": [
               "//pm.globals.set(\"int\", _.random(0, 87));",
-              "",
-              "pm.test(\"Status code is 200\", function () {",
+              "//{{url}}people/{{init}}",
+              ""
+            ],
+            "type": "text/javascript"
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "1650e3ae-5f44-4f5f-81ad-14f13df00fb0",
+            "exec": [
+              "pm.test(\"Request to get details of specific Starwar characters is success\", function () {",
               "    pm.response.to.have.status(200);",
               "});"
             ],
@@ -64,7 +74,7 @@
           "mode": "raw",
           "raw": ""
         },
-        "url": "{{url}}people/{{characterid}}",
+        "url": "//{{url}}people/{{characterid}}",
         "description": "This request will retrieve the details of the characters given in Data.csv file"
       },
       "response": []
@@ -92,7 +102,7 @@
           "script": {
             "id": "7aa6d88e-bb32-480c-b02e-6955acbf937c",
             "exec": [
-              "pm.globals.set(\"int1\", _.random(0, 61));",
+              "//pm.globals.set(\"int1\", _.random(0, 61));",
               "//console.log(int);",
               "//pm.globals.get(int);",
               "//console.log(int);"
@@ -108,7 +118,7 @@
           "mode": "raw",
           "raw": ""
         },
-        "url": "{{url}}planets/{{int}}"
+        "url": "{{url}}planets/{{planetid}}"
       },
       "response": []
     },
@@ -262,7 +272,7 @@
   ],
   "variable": [
     {
-      "id": "9f7c540a-fbc2-4741-86c1-8f54fc32de3d",
+      "id": "28e6ceef-905b-42f8-8caa-6a67f73359e1",
       "key": "url",
       "value": "",
       "type": "string",
