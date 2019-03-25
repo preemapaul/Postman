@@ -47,10 +47,11 @@
           "script": {
             "id": "e40bddf3-9466-4359-9c99-c28676ce28a1",
             "exec": [
-              "pm.globals.set(\"int\", _.random(0, 87));",
-              "//console.log(int);",
-              "//pm.globals.get(int);",
-              "//console.log(int);"
+              "//pm.globals.set(\"int\", _.random(0, 87));",
+              "",
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});"
             ],
             "type": "text/javascript"
           }
@@ -63,7 +64,7 @@
           "mode": "raw",
           "raw": ""
         },
-        "url": "{{url}}people/{{int}}",
+        "url": "{{url}}people/{{characterid}}",
         "description": "This request will retrieve the details of the characters given in Data.csv file"
       },
       "response": []
@@ -261,7 +262,7 @@
   ],
   "variable": [
     {
-      "id": "b3d10867-3eee-4e15-a3d8-76d61d6c0d36",
+      "id": "9f7c540a-fbc2-4741-86c1-8f54fc32de3d",
       "key": "url",
       "value": "",
       "type": "string",
