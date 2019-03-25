@@ -7,14 +7,14 @@
   "item": [
     {
       "_postman_id": "2803a8cd-c139-4d95-9ca0-c8d2047540ce",
-      "name": "List of Characters",
+      "name": "Requset to retrieve list of  Starwar characters",
       "event": [
         {
           "listen": "test",
           "script": {
             "id": "ff461b28-cdc9-47d8-8ebf-80858f72e237",
             "exec": [
-              "pm.test(\"Status code is 200\", function () {",
+              "pm.test(\"Request to get list of Starwar characters is successful\", function () {",
               "    pm.response.to.have.status(200);",
               "});"
             ],
@@ -29,8 +29,8 @@
           "mode": "raw",
           "raw": ""
         },
-        "url": "https://swapi.co/api/people/",
-        "description": "Request has to retrieve all the Star war characters"
+        "url": "{{url}}people/",
+        "description": "This request has to retrieve all the Star war characters"
       },
       "response": []
     },
@@ -59,7 +59,7 @@
           "mode": "raw",
           "raw": ""
         },
-        "url": "https://swapi.co/api/people/{{int}}"
+        "url": "{{url}}people/{{int}}"
       },
       "response": []
     },
@@ -73,7 +73,7 @@
           "mode": "raw",
           "raw": ""
         },
-        "url": "http://swapi.co/api/planets/"
+        "url": "{{url}}planets/"
       },
       "response": []
     },
@@ -256,7 +256,7 @@
   ],
   "variable": [
     {
-      "id": "174e78c2-8baa-425f-bafe-a57e0c0c92e2",
+      "id": "defa48a4-4222-4e13-8577-d3e469bd7518",
       "key": "url",
       "value": "",
       "type": "string",
