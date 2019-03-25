@@ -74,7 +74,7 @@
           "mode": "raw",
           "raw": ""
         },
-        "url": "//{{url}}people/{{characterid}}",
+        "url": "{{url}}people/{{characterid}}",
         "description": "This request will retrieve the details of the characters given in Data.csv file"
       },
       "response": []
@@ -272,7 +272,7 @@
   ],
   "variable": [
     {
-      "id": "28e6ceef-905b-42f8-8caa-6a67f73359e1",
+      "id": "1792963b-745c-4003-85dd-23d3b63cd6f4",
       "key": "url",
       "value": "",
       "type": "string",
