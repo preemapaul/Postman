@@ -160,7 +160,7 @@
           "raw": ""
         },
         "url": {
-          "raw": "{{url}}people/?search=Quarsh Panaka",
+          "raw": "{{url}}people/?search={{charactername}}",
           "host": [
             "{{url}}people"
           ],
@@ -170,7 +170,7 @@
           "query": [
             {
               "key": "search",
-              "value": "Quarsh Panaka",
+              "value": "{{charactername}}",
               "equals": true
             }
           ]
@@ -272,7 +272,7 @@
   ],
   "variable": [
     {
-      "id": "1792963b-745c-4003-85dd-23d3b63cd6f4",
+      "id": "34a170fe-fbef-4f62-b57c-514eefd65816",
       "key": "url",
       "value": "",
       "type": "string",
