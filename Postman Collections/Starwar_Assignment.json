@@ -144,7 +144,7 @@
               "",
               "pm.test(\"Name of the character is Quarsh Panaka\", function () {",
               "    ",
-              "    pm.expect(jsonData.results[0].name).to.eql('Quarsh Panaka');",
+              "    pm.expect(jsonData.results[0].name).to.eql(Data.charactername);",
               "});",
               ""
             ],
@@ -272,7 +272,7 @@
   ],
   "variable": [
     {
-      "id": "34a170fe-fbef-4f62-b57c-514eefd65816",
+      "id": "d66a4793-fcf0-46d9-a4aa-309aa1a63541",
       "key": "url",
       "value": "",
       "type": "string",
