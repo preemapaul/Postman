@@ -210,8 +210,9 @@
               "});",
               "",
               "pm.test(\"Name of the planet is Alderaan\", function () {",
+              "    console.log(data[\"planetname\"]);",
               "    ",
-              "    pm.expect(jsonData.results[0].name).to.eql('Alderaan');",
+              "    pm.expect(jsonData.results[0].name)===data.planetname;",
               "});",
               "",
               ""
@@ -228,7 +229,7 @@
           "raw": ""
         },
         "url": {
-          "raw": "{{url}}planets/?search=Alderaan",
+          "raw": "{{url}}planets/?search={{planetname}}",
           "host": [
             "{{url}}planets"
           ],
@@ -238,7 +239,7 @@
           "query": [
             {
               "key": "search",
-              "value": "Alderaan",
+              "value": "{{planetname}}",
               "equals": true
             }
           ]
@@ -272,7 +273,7 @@
   ],
   "variable": [
     {
-      "id": "d66a4793-fcf0-46d9-a4aa-309aa1a63541",
+      "id": "085b205f-0bd8-4022-84e9-278935d2a08f",
       "key": "url",
       "value": "",
       "type": "string",
