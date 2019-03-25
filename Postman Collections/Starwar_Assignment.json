@@ -14,8 +14,12 @@
           "script": {
             "id": "ff461b28-cdc9-47d8-8ebf-80858f72e237",
             "exec": [
-              "pm.test(\"Request to get list of Starwar characters is successful\", function () {",
+              "pm.test(\"Request to get list of Starwar characters is success\", function () {",
               "    pm.response.to.have.status(200);",
+              "});",
+              "pm.test(\"Response contains list of characters\", function () {",
+              "    var jsonData = pm.response.json();",
+              "    pm.expect(jsonData.count).not.equal(null);",
               "});"
             ],
             "type": "text/javascript"
@@ -36,7 +40,7 @@
     },
     {
       "_postman_id": "b54dfc11-3e81-495a-ad8f-4b99cb9ec2a6",
-      "name": "Details of Specific Star war Character",
+      "name": "Request to retrieve details of a specific Starwar character",
       "event": [
         {
           "listen": "prerequest",
@@ -59,7 +63,8 @@
           "mode": "raw",
           "raw": ""
         },
-        "url": "{{url}}people/{{int}}"
+        "url": "{{url}}people/{{int}}",
+        "description": "This request will retrieve the details of the characters given in Data.csv file"
       },
       "response": []
     },
@@ -256,7 +261,7 @@
   ],
   "variable": [
     {
-      "id": "defa48a4-4222-4e13-8577-d3e469bd7518",
+      "id": "b3d10867-3eee-4e15-a3d8-76d61d6c0d36",
       "key": "url",
       "value": "",
       "type": "string",
