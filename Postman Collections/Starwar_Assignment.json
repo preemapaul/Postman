@@ -176,7 +176,7 @@
     },
     {
       "_postman_id": "67b44c87-2663-4427-abc7-98e8b5040225",
-      "name": "Search for specific Character",
+      "name": "Request to search for specific character",
       "event": [
         {
           "listen": "test",
@@ -326,7 +326,7 @@
   ],
   "variable": [
     {
-      "id": "94f0c368-2f92-4131-a66d-40e125f9c4f8",
+      "id": "c55d991c-b5ea-4d55-b01b-17dc21675625",
       "key": "url",
       "value": "",
       "type": "string",
