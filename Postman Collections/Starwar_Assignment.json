@@ -25,8 +25,8 @@
               "",
               "let jsonData = pm.response.json();",
               "",
-              "// Test verifies the number of characters in list",
-              "pm.test(\"List contains\"+ jsonData.count+\"characters\", function () {",
+              "// Test verifies the number of characters in list is equal to total number of characters",
+              "pm.test(\"List contains \"+ jsonData.count+ \"characters\", function () {",
               "    ",
               "    console.log(jsonData.count)",
               "    pm.expect(jsonData.count).is.equal(data.charactercount);",
@@ -45,7 +45,7 @@
           "raw": ""
         },
         "url": "{{url}}people/",
-        "description": "This test request has to retrieve all the Starwar characters\n\nGet request used -> Root:   https://swapi.co/api\n                    End point:/people/\nTest request should get success response \nThe response should contain complete list of Starwar characters."
+        "description": "This test request has to retrieve all the Starwar characters\n\nGet request used -> Root:   https://swapi.co/api\n\n                    End point:/people/\n                    \nTest request should get success response \n\nThe response should contain complete list of Starwar characters."
       },
       "response": []
     },
@@ -280,7 +280,7 @@
   ],
   "variable": [
     {
-      "id": "81e09e70-4806-4056-b9ac-58ed7a81c08c",
+      "id": "26f95054-0c08-414e-91c3-2955b9188d3c",
       "key": "url",
       "value": "",
       "type": "string",
