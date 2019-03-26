@@ -7,7 +7,7 @@
   "item": [
     {
       "_postman_id": "2803a8cd-c139-4d95-9ca0-c8d2047540ce",
-      "name": "Requset to retrieve list of  Starwar characters",
+      "name": "Requset to retrieve complete list of  Starwar characters",
       "event": [
         {
           "listen": "test",
@@ -280,7 +280,7 @@
   ],
   "variable": [
     {
-      "id": "26f95054-0c08-414e-91c3-2955b9188d3c",
+      "id": "9375fad5-af15-4479-9460-45b1622a37fe",
       "key": "url",
       "value": "",
       "type": "string",
