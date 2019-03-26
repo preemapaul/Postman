@@ -212,7 +212,7 @@
               "});",
               "",
               "",
-              "pm.test(\"Name of the planet is\" + data[\"planetname\"], function () {",
+              "pm.test(\"Name of the planet is \" + data[\"planetname\"], function () {",
               "    console.log(data[\"planetname\"]);",
               "    ",
               "    pm.expect(jsonData.results[0].name)===data.planetname;",
@@ -276,7 +276,7 @@
   ],
   "variable": [
     {
-      "id": "a3460e06-6209-462d-bbb4-2f757e4ff72b",
+      "id": "db5776f4-e3a2-46c7-892e-a901f9c20f3d",
       "key": "url",
       "value": "",
       "type": "string",
