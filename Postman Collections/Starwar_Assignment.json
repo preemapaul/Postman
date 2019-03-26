@@ -45,7 +45,7 @@
           "raw": ""
         },
         "url": "{{url}}people/",
-        "description": "This test request has to retrieve all the Starwar characters\nGet request used -> Root:   https://swapi.co/api\n                    End point:/people/\nTest request should get success response \nThe response should contain complete list of Starwar characters."
+        "description": "This test request has to retrieve all the Starwar characters\n\nGet request used -> Root:   https://swapi.co/api\n                    End point:/people/\nTest request should get success response \nThe response should contain complete list of Starwar characters."
       },
       "response": []
     },
@@ -280,7 +280,7 @@
   ],
   "variable": [
     {
-      "id": "16031ccd-6239-4b64-8354-c9bdc734a2b9",
+      "id": "81e09e70-4806-4056-b9ac-58ed7a81c08c",
       "key": "url",
       "value": "",
       "type": "string",
