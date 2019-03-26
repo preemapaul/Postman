@@ -74,13 +74,7 @@
               "",
               "let jsonData = pm.response.json();",
               "",
-              "// Test verifies  list contains details of only one character",
-              "pm.test(\"List contains only one characters\", function () {",
-              "    ",
-              "",
-              "   pm.expect(pm.response.json().to.have.lengthOf(1));",
-              "    ",
-              "});"
+              ""
             ],
             "type": "text/javascript"
           }
@@ -143,7 +137,7 @@
     },
     {
       "_postman_id": "37766b6d-b9c9-4806-8a15-f63857f860d4",
-      "name": "Details of Planets",
+      "name": "Request to retieve details of specific lanets",
       "event": [
         {
           "listen": "prerequest",
@@ -319,7 +313,7 @@
   ],
   "variable": [
     {
-      "id": "cf2fcd48-9d10-4bd1-ba85-fcaaf0f8959e",
+      "id": "05d21ef7-a004-4772-afd6-a7278c2ccde2",
       "key": "url",
       "value": "",
       "type": "string",
