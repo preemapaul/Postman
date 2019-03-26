@@ -26,11 +26,11 @@
               "let jsonData = pm.response.json();",
               "",
               "// Test verifies the number of characters in list",
-              "pm.test(\"Response contains list of \"+ jsonData.count + \" characters\", function () {",
+              "pm.test(\"List contains\"+ jsonData.count+\"characters\", function () {",
               "    ",
-              "    pm.expect(jsonData.count).is.equal(87);",
+              "    console.log(jsonData.count)",
+              "    pm.expect(jsonData.count).is.equal(data.charactercount);",
               "    ",
-              "    console.log(\"List contains\"+ jsonData.count+\"characters\")",
               "});"
             ],
             "type": "text/javascript"
@@ -280,7 +280,7 @@
   ],
   "variable": [
     {
-      "id": "39bb2d94-fe14-4c0c-b887-7fb5d70614d0",
+      "id": "16031ccd-6239-4b64-8354-c9bdc734a2b9",
       "key": "url",
       "value": "",
       "type": "string",
