@@ -101,6 +101,34 @@
     {
       "_postman_id": "3fc5a3c7-d20b-4006-b60f-364801da8a33",
       "name": "Request to retrieve list of Starwar Planets",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "e666ab43-217a-4805-8428-996a5bf43552",
+            "exec": [
+              "// Test to verify request is success",
+              "",
+              "pm.test(\"Request to get list of Starwar planets is success\", function () {",
+              "    pm.response.to.have.status(200);",
+              "    let jsonData = pm.response.json();",
+              "     console.log (\"Response contains list of \"+ jsonData.count + \" characters\");",
+              "});",
+              "",
+              "let jsonData = pm.response.json();",
+              "",
+              "// Test verifies the number of characters in list is equal to total number of characters",
+              "pm.test(\"List contains \"+ jsonData.count+ \"planets\", function () {",
+              "    ",
+              "    console.log(jsonData.count)",
+              "    pm.expect(jsonData.count).is.equal(data.planetcount);",
+              "    ",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
       "request": {
         "method": "GET",
         "header": [],
@@ -290,7 +318,7 @@
   ],
   "variable": [
     {
-      "id": "2895be3f-1ad3-40f6-8148-cc8a3123d8f4",
+      "id": "2d20813c-860e-4c97-87ed-f81b94ff1ec7",
       "key": "url",
       "value": "",
       "type": "string",
