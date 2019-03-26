@@ -226,7 +226,8 @@
               "equals": true
             }
           ]
-        }
+        },
+        "description": "This test request has to retrieve details of specific Starwar characters\n\nGet request used -> Root:   https://swapi.co/api\n\n                    End point:/people/?search=value\n                    \nTest request should get success response \n\nThe response should contain only one Starwar characters.\n\nThe character name in response should be same as thatof the name given as search parameter"
       },
       "response": []
     },
@@ -326,7 +327,7 @@
   ],
   "variable": [
     {
-      "id": "c55d991c-b5ea-4d55-b01b-17dc21675625",
+      "id": "5bc8dd45-db45-4bdf-91f8-58fd87840073",
       "key": "url",
       "value": "",
       "type": "string",
