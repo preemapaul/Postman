@@ -204,7 +204,8 @@
               "    ",
               "});",
               "",
-              "pm.test(\"Name of the planet is Alderaan\", function () {",
+              "",
+              "pm.test(\"Name of the planet is\" + data[\"planetname\"], function () {",
               "    console.log(data[\"planetname\"]);",
               "    ",
               "    pm.expect(jsonData.results[0].name)===data.planetname;",
@@ -268,7 +269,7 @@
   ],
   "variable": [
     {
-      "id": "b6f803ba-a30f-4e27-a99e-3f93de3a853a",
+      "id": "1293ada6-fee7-46e5-9680-34bc455fa187",
       "key": "url",
       "value": "",
       "type": "string",
