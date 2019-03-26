@@ -19,6 +19,8 @@
               "",
               "pm.test(\"Request to get list of Starwar characters is success\", function () {",
               "    pm.response.to.have.status(200);",
+              "    let jsonData = pm.response.json();",
+              "     console.log (\"Response contains list of \"+ jsonData.count + \" characters\");",
               "});",
               "",
               "let jsonData = pm.response.json();",
@@ -27,6 +29,8 @@
               "pm.test(\"Response contains list of \"+ jsonData.count + \" characters\", function () {",
               "    ",
               "    pm.expect(jsonData.count).not.equal(null);",
+              "    ",
+              "    console.log(\"List contains\"+ jsonData.count+\"characters\")",
               "});"
             ],
             "type": "text/javascript"
@@ -276,7 +280,7 @@
   ],
   "variable": [
     {
-      "id": "db5776f4-e3a2-46c7-892e-a901f9c20f3d",
+      "id": "65f9d180-2a05-4746-914b-f35ffde9c7ea",
       "key": "url",
       "value": "",
       "type": "string",
