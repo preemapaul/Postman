@@ -100,7 +100,7 @@
     },
     {
       "_postman_id": "3fc5a3c7-d20b-4006-b60f-364801da8a33",
-      "name": "List of Starwar Planets",
+      "name": "Request to retrieve list of Starwar Planets",
       "request": {
         "method": "GET",
         "header": [],
@@ -290,7 +290,7 @@
   ],
   "variable": [
     {
-      "id": "888b31e8-fb0f-49b6-8922-189941e50fe6",
+      "id": "2895be3f-1ad3-40f6-8148-cc8a3123d8f4",
       "key": "url",
       "value": "",
       "type": "string",
