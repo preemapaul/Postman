@@ -78,7 +78,7 @@
               "pm.test(\"List contains only one characters\", function () {",
               "    ",
               "",
-              "    pm.expect(pm.response.json().results.to.have.lengthOf(1));",
+              "   pm.expect(pm.response.json().to.have.lengthOf(1));",
               "    ",
               "});"
             ],
@@ -136,7 +136,8 @@
           "mode": "raw",
           "raw": ""
         },
-        "url": "{{url}}planets/"
+        "url": "{{url}}planets/",
+        "description": "This test request has to retrieve all the Starwar planets\n\nGet request used -> Root:   https://swapi.co/api\n\n                    End point:/planets/\n                    \nTest request should get success response \n\nThe response should contain complete list of Starwar planets."
       },
       "response": []
     },
@@ -318,7 +319,7 @@
   ],
   "variable": [
     {
-      "id": "2d20813c-860e-4c97-87ed-f81b94ff1ec7",
+      "id": "cf2fcd48-9d10-4bd1-ba85-fcaaf0f8959e",
       "key": "url",
       "value": "",
       "type": "string",
