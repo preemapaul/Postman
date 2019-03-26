@@ -77,8 +77,8 @@
               "// Test verifies  list contains details of only one character",
               "pm.test(\"List contains only one characters\", function () {",
               "    ",
-              "    console.log(jsonData.count)",
-              "    pm.expect(jsonData.count).is.equal(1);",
+              "    console.log(count(jsonData.name))",
+              "    //pm.expect(jsonData.count).is.equal(1);",
               "    ",
               "});"
             ],
@@ -290,7 +290,7 @@
   ],
   "variable": [
     {
-      "id": "69a7e2aa-9e81-4f03-8963-890cd5d735e9",
+      "id": "b13ce083-dedb-4244-8c5e-bbbf83ae6171",
       "key": "url",
       "value": "",
       "type": "string",
