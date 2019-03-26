@@ -148,6 +148,18 @@
             ],
             "type": "text/javascript"
           }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "664cf06c-706b-4780-a545-17017e547173",
+            "exec": [
+              "pm.test(\"Request to get details of specific Starwar planet is success\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
         }
       ],
       "request": {
@@ -157,7 +169,8 @@
           "mode": "raw",
           "raw": ""
         },
-        "url": "{{url}}planets/{{planetid}}"
+        "url": "{{url}}planets/{{planetid}}",
+        "description": "This test request has to retrieve the details of the character given in data file\n\nGet request used -> Root:   https://swapi.co/api\n\n                    End point:/planets/:id\n                    \nTest request should get success response \n\nThe response list should contain details of only one Starwar planet."
       },
       "response": []
     },
@@ -313,7 +326,7 @@
   ],
   "variable": [
     {
-      "id": "3ce4cba2-0ef6-443f-af7d-9c0f3cc014ea",
+      "id": "94f0c368-2f92-4131-a66d-40e125f9c4f8",
       "key": "url",
       "value": "",
       "type": "string",
