@@ -250,6 +250,7 @@
           "script": {
             "id": "3acdf7ab-921f-4d3b-9882-98421890c9a9",
             "exec": [
+              "// Test to verify request for search a planet is success",
               "",
               "pm.test(\"Request for search a planet is success\", function () {",
               "    pm.response.to.have.status(200);",
@@ -257,11 +258,14 @@
               "",
               "let jsonData = pm.response.json();",
               "",
+              "//Test to verify the list contains details of only one planet",
+              "",
               "pm.test(\"Single planet details returned\", function () {",
               "    pm.expect(jsonData.count).to.eql(1);",
               "    ",
               "});",
               "",
+              "// Test to verify the name in response matches with name given in search parameter",
               "",
               "pm.test(\"Name of the planet is \" + data[\"planetname\"], function () {",
               "    console.log(data[\"planetname\"]);",
@@ -327,7 +331,7 @@
   ],
   "variable": [
     {
-      "id": "2eb8b69c-f1cf-4723-9bfc-5d6b39407df3",
+      "id": "8cb21773-553e-47cd-aaa8-37434e207330",
       "key": "url",
       "value": "",
       "type": "string",
