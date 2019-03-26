@@ -137,7 +137,7 @@
     },
     {
       "_postman_id": "37766b6d-b9c9-4806-8a15-f63857f860d4",
-      "name": "Request to retieve details of specific lanets",
+      "name": "Request to retieve details of specific planets",
       "event": [
         {
           "listen": "prerequest",
@@ -313,7 +313,7 @@
   ],
   "variable": [
     {
-      "id": "05d21ef7-a004-4772-afd6-a7278c2ccde2",
+      "id": "3ce4cba2-0ef6-443f-af7d-9c0f3cc014ea",
       "key": "url",
       "value": "",
       "type": "string",
