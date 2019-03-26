@@ -47,8 +47,6 @@
           "script": {
             "id": "e40bddf3-9466-4359-9c99-c28676ce28a1",
             "exec": [
-              "//pm.globals.set(\"int\", _.random(0, 87));",
-              "//{{url}}people/{{init}}",
               ""
             ],
             "type": "text/javascript"
@@ -102,10 +100,7 @@
           "script": {
             "id": "7aa6d88e-bb32-480c-b02e-6955acbf937c",
             "exec": [
-              "//pm.globals.set(\"int1\", _.random(0, 61));",
-              "//console.log(int);",
-              "//pm.globals.get(int);",
-              "//console.log(int);"
+              ""
             ],
             "type": "text/javascript"
           }
@@ -273,7 +268,7 @@
   ],
   "variable": [
     {
-      "id": "0a1ce38c-acfb-4e13-8a4e-046b2438f1a0",
+      "id": "9fd87826-ccdc-48cf-9e5a-39af86e07572",
       "key": "url",
       "value": "",
       "type": "string",
