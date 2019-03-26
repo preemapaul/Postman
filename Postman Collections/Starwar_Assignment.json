@@ -233,7 +233,7 @@
     },
     {
       "_postman_id": "92da19c9-cdba-4f5c-83e3-b2a4c0d17a48",
-      "name": "Search for specific Planet",
+      "name": "Request to search for specific planet",
       "event": [
         {
           "listen": "prerequest",
@@ -327,7 +327,7 @@
   ],
   "variable": [
     {
-      "id": "5bc8dd45-db45-4bdf-91f8-58fd87840073",
+      "id": "7b70337c-cde5-4d04-83ee-90c539da38fc",
       "key": "url",
       "value": "",
       "type": "string",
