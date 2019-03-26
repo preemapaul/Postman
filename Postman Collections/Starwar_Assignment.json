@@ -70,6 +70,16 @@
             "exec": [
               "pm.test(\"Request to get details of specific Starwar characters is success\", function () {",
               "    pm.response.to.have.status(200);",
+              "});",
+              "",
+              "let jsonData = pm.response.json();",
+              "",
+              "// Test verifies  list contains details of only one character",
+              "pm.test(\"List contains only one characters\", function () {",
+              "    ",
+              "    console.log(jsonData.count)",
+              "    pm.expect(jsonData.count).is.equal(1);",
+              "    ",
               "});"
             ],
             "type": "text/javascript"
@@ -280,7 +290,7 @@
   ],
   "variable": [
     {
-      "id": "1f310fba-2013-4e75-a13c-3edef2942ea9",
+      "id": "69a7e2aa-9e81-4f03-8963-890cd5d735e9",
       "key": "url",
       "value": "",
       "type": "string",
