@@ -155,6 +155,8 @@
           "script": {
             "id": "664cf06c-706b-4780-a545-17017e547173",
             "exec": [
+              "//Test to verify the request is success",
+              "",
               "pm.test(\"Request to get details of specific Starwar planet is success\", function () {",
               "    pm.response.to.have.status(200);",
               "});"
@@ -267,14 +269,17 @@
               "//Test to verify the list contains details of only one planet",
               "",
               "pm.test(\"Single planet details returned\", function () {",
+              "    console.log(\"Number of planet present in response\"+jsonData.count);",
               "    pm.expect(jsonData.count).to.eql(1);",
               "    ",
               "});",
               "",
               "// Test to verify the name in response matches with name given in search parameter",
               "",
-              "pm.test(\"Name of the planet is \" + data[\"planetname\"], function () {",
-              "    console.log(data[\"planetname\"]);",
+              "pm.test(\"Deatils in response corresponds to the searched planet \", function () {",
+              "    ",
+              "    console.log(\"Name of the planet in the request\"+ data[\"planetname\"]);",
+              "    console.log(\"Name of the planet in the response\" + jsonData.results[0].name);",
               "    ",
               "    pm.expect(jsonData.results[0].name)===data.planetname;",
               "});",
@@ -337,7 +342,7 @@
   ],
   "variable": [
     {
-      "id": "c92656d0-b032-40f2-9e14-23bfb47afcfd",
+      "id": "f16896fb-d431-41f2-af12-48ac8040c34c",
       "key": "url",
       "value": "",
       "type": "string",
