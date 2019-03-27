@@ -274,7 +274,7 @@
               "    ",
               "});",
               "",
-              "// Test to verify the name in response matches with name given in search parameter",
+              "// Test to verify details in response is  same as that of the planet given as search parameter by comparing planet names in request and response",
               "",
               "pm.test(\"Deatils in response corresponds to the searched planet \", function () {",
               "    ",
@@ -342,7 +342,7 @@
   ],
   "variable": [
     {
-      "id": "43a9fd67-8a64-417d-92aa-ffdb217b13e0",
+      "id": "876e2064-8d6a-4038-953e-57a00eeaf185",
       "key": "url",
       "value": "",
       "type": "string",
