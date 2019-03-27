@@ -112,7 +112,7 @@
               "});",
               "",
               "let jsonData = pm.response.json();",
-              "console.log (\"Response contains list of \"+ jsonData.count + \" characters\");",
+              "console.log (\"Response contains list of \"+ jsonData.count + \" planets\");",
               "",
               "// Test verifies the number of characters in list is equal to total number of characters",
               "",
@@ -345,7 +345,7 @@
   ],
   "variable": [
     {
-      "id": "3ec54b3b-45db-4116-a572-02e3a98fa109",
+      "id": "ff90ccfa-7fb4-41ec-8fd3-b360bd228364",
       "key": "url",
       "value": "",
       "type": "string",
