@@ -183,18 +183,23 @@
           "script": {
             "id": "0e3ec5b2-189c-4f6d-9c4e-9f2845d96996",
             "exec": [
+              "",
+              "// Test verifies the Request for search a character is success",
               "pm.test(\"Request for search a character is success\", function () {",
               "    pm.response.to.have.status(200);",
               "});",
               "",
               "let jsonData = pm.response.json();",
               "",
+              "// Test to verify the response contain only one character",
               "pm.test(\"Single character details returned\", function () {",
               "    pm.expect(jsonData.count).to.eql(1);",
               "    ",
               "});",
               "",
-              "pm.test(\"Name of the character is Quarsh Panaka\", function () {",
+              "// Test to verify the  name in response is same as that of the name given as search parameter",
+              "",
+              "pm.test(\"Name of the character is \"+jsonData.results[0].name, function () {",
               "    ",
               "    pm.expect(jsonData.results[0].name)===data.charactername;",
               "});",
@@ -331,7 +336,7 @@
   ],
   "variable": [
     {
-      "id": "957ae9c0-d5a0-4f7e-89d4-3436002a5d6e",
+      "id": "2b6d33b8-73da-4035-b6de-5c1a018f4771",
       "key": "url",
       "value": "",
       "type": "string",
