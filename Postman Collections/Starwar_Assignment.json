@@ -89,7 +89,7 @@
           "raw": ""
         },
         "url": "{{url}}people/{{characterid}}",
-        "description": "This test request has to retrieve the details of the character given in data file\n\nGet request used -> Root:   https://swapi.co/api\n\n                    End point:/people/:id\n                    \nTest request should get success response \n\nThe response list should contain details of only one Starwar characters."
+        "description": "This test request has to retrieve the details of the character id given in data file\n\nGet request used -> Root:   https://swapi.co/api\n\n                    End point:/people/:id\n                    \nTest request should get success response \n\nThe response list should contain details of only one Starwar characters."
       },
       "response": []
     },
@@ -337,7 +337,7 @@
   ],
   "variable": [
     {
-      "id": "f2ce8bc6-ba7b-4149-8850-e5c488a495a4",
+      "id": "7f9421bf-e2d5-4066-bb7e-3407a58c3c7c",
       "key": "url",
       "value": "",
       "type": "string",
