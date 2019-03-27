@@ -272,7 +272,7 @@
               "//Test to verify the list contains details of only one planet",
               "",
               "pm.test(\"Single planet details returned\", function () {",
-              "    console.log(\"Number of planet present in response\"+jsonData.count);",
+              "    console.log(\"Number of planet present in response \"+jsonData.count);",
               "    pm.expect(jsonData.count).to.eql(1);",
               "    ",
               "});",
@@ -281,8 +281,8 @@
               "",
               "pm.test(\"Deatils in response corresponds to the searched planet \", function () {",
               "    ",
-              "    console.log(\"Name of the planet in the request\"+ data[\"planetname\"]);",
-              "    console.log(\"Name of the planet in the response\" + jsonData.results[0].name);",
+              "    console.log(\"Name of the planet in the request \"+ data[\"planetname\"]);",
+              "    console.log(\"Name of the planet in the response \" + jsonData.results[0].name);",
               "    ",
               "    pm.expect(jsonData.results[0].name)===data.planetname;",
               "});",
@@ -345,7 +345,7 @@
   ],
   "variable": [
     {
-      "id": "6b482cd6-afbe-4fc8-862d-f15308d9af4d",
+      "id": "f1e3fdb1-6179-4020-abe4-cb331fd6776f",
       "key": "url",
       "value": "",
       "type": "string",
