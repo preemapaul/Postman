@@ -235,7 +235,7 @@
             }
           ]
         },
-        "description": "This test request has to retrieve details of specific Starwar characters\n\nGet request used -> Root:   https://swapi.co/api\n\n                    End point:/people/?search=value\n                    \nTest request should get success response \n\nThe response should contain only one Starwar characters.\n\nThe character name in response should be same as thatof the name given as search parameter"
+        "description": "This test request has to retrieve details of specific Starwar characters\n\nGet request used -> Root:   https://swapi.co/api\n\n                    End point:/people/?search=value\n                    \nTest request should get success response \n\nThe response should contain only one Starwar characters.\n\nThe character details in response should corresponds to the character given as search parameter"
       },
       "response": []
     },
@@ -313,7 +313,7 @@
             }
           ]
         },
-        "description": "This test request has to retrieve details of specific Starwar planet\n\nGet request used -> Root:   https://swapi.co/api\n\n                    End point:/planet/?search=value\n                    \nTest request should get success response \n\nThe response should contain only one Starwar planet.\n\nThe character details in response should be same as that of the planet given as search parameter"
+        "description": "This test request has to retrieve details of specific Starwar planet\n\nGet request used -> Root:   https://swapi.co/api\n\n                    End point:/planet/?search=value\n                    \nTest request should get success response \n\nThe response should contain only one Starwar planet.\n\nThe planet details in response should corresponds to the planet given as search parameter"
       },
       "response": []
     }
@@ -342,7 +342,7 @@
   ],
   "variable": [
     {
-      "id": "876e2064-8d6a-4038-953e-57a00eeaf185",
+      "id": "04611c7d-3dda-496b-a22b-c64f2ddf766c",
       "key": "url",
       "value": "",
       "type": "string",
