@@ -200,9 +200,12 @@
               "    ",
               "});",
               "",
-              "// Test to verify the  name in response is same as that of the name given as search parameter",
+              "// Test to verify details in response is  same as that of the character given as search parameter by comparing character names in request and response",
               "",
-              "pm.test(\"Name of the character is \"+jsonData.results[0].name, function () {",
+              "pm.test(\"Deatils in response corresponds to the searched planet \", function () {",
+              "    ",
+              "    console.log(\"Name of the planet in the request\"+ data[\"charactername\"]);",
+              "    console.log(\"Name of the planet in the response\" + jsonData.results[0].name);",
               "    ",
               "    pm.expect(jsonData.results[0].name)===data.charactername;",
               "});",
@@ -342,7 +345,7 @@
   ],
   "variable": [
     {
-      "id": "04611c7d-3dda-496b-a22b-c64f2ddf766c",
+      "id": "3ec54b3b-45db-4116-a572-02e3a98fa109",
       "key": "url",
       "value": "",
       "type": "string",
