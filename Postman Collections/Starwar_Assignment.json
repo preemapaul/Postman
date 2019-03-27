@@ -204,8 +204,8 @@
               "",
               "pm.test(\"Deatils in response corresponds to the searched planet \", function () {",
               "    ",
-              "    console.log(\"Name of the planet in the request\"+ data[\"charactername\"]);",
-              "    console.log(\"Name of the planet in the response\" + jsonData.results[0].name);",
+              "    console.log(\"Name of the planet in the request \"+ data[\"charactername\"]);",
+              "    console.log(\"Name of the planet in the response \" + jsonData.results[0].name);",
               "    ",
               "    pm.expect(jsonData.results[0].name)===data.charactername;",
               "});",
@@ -345,7 +345,7 @@
   ],
   "variable": [
     {
-      "id": "65e0b879-8fd4-49a7-9490-95466dab1b7c",
+      "id": "1747da52-396e-4ab6-9d07-1aa78b2b8603",
       "key": "url",
       "value": "",
       "type": "string",
