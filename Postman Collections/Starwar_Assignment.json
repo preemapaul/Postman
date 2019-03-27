@@ -313,7 +313,7 @@
             }
           ]
         },
-        "description": "This test request has to retrieve details of specific Starwar planet\n\nGet request used -> Root:   https://swapi.co/api\n\n                    End point:/planet/?search=value\n                    \nTest request should get success response \n\nThe response should contain only one Starwar planet.\n\nThe character name in response should be same as that of the name given as search parameter"
+        "description": "This test request has to retrieve details of specific Starwar planet\n\nGet request used -> Root:   https://swapi.co/api\n\n                    End point:/planet/?search=value\n                    \nTest request should get success response \n\nThe response should contain only one Starwar planet.\n\nThe character details in response should be same as that of the planet given as search parameter"
       },
       "response": []
     }
@@ -342,7 +342,7 @@
   ],
   "variable": [
     {
-      "id": "f16896fb-d431-41f2-af12-48ac8040c34c",
+      "id": "43a9fd67-8a64-417d-92aa-ffdb217b13e0",
       "key": "url",
       "value": "",
       "type": "string",
