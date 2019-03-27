@@ -69,11 +69,14 @@
           "script": {
             "id": "1650e3ae-5f44-4f5f-81ad-14f13df00fb0",
             "exec": [
+              "",
+              "//Test to verify the request is success",
+              "",
               "pm.test(\"Request to get details of specific Starwar characters is success\", function () {",
               "    pm.response.to.have.status(200);",
               "});",
               "",
-              "let jsonData = pm.response.json();",
+              "",
               "",
               ""
             ],
@@ -106,18 +109,15 @@
               "",
               "pm.test(\"Request to get list of Starwar planets is success\", function () {",
               "    pm.response.to.have.status(200);",
-              "    let jsonData = pm.response.json();",
-              "     console.log (\"Response contains list of \"+ jsonData.count + \" characters\");",
               "});",
               "",
               "let jsonData = pm.response.json();",
+              "console.log (\"Response contains list of \"+ jsonData.count + \" characters\");",
               "",
               "// Test verifies the number of characters in list is equal to total number of characters",
-              "pm.test(\"List contains \"+ jsonData.count+ \"planets\", function () {",
-              "    ",
-              "    console.log(jsonData.count)",
+              "",
+              "pm.test(\"List contains details of all the planets\", function () {",
               "    pm.expect(jsonData.count).is.equal(data.planetcount);",
-              "    ",
               "});"
             ],
             "type": "text/javascript"
@@ -337,7 +337,7 @@
   ],
   "variable": [
     {
-      "id": "7f9421bf-e2d5-4066-bb7e-3407a58c3c7c",
+      "id": "5aec4519-1328-4b19-9da2-fd44650bf65e",
       "key": "url",
       "value": "",
       "type": "string",
