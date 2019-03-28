@@ -322,6 +322,22 @@
     {
       "_postman_id": "469a2340-adfa-4b96-9723-c085db557258",
       "name": "To validate invalid end points",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "549629e5-01c7-4120-ae68-f83ed1868f5b",
+            "exec": [
+              "pm.test(\"Failed to get list of Starwar character\", function () {",
+              "    pm.response.not.to.have.status(200);",
+              "    ",
+              "    console.log(pm.response.status);",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
       "request": {
         "method": "GET",
         "header": [],
@@ -329,7 +345,7 @@
           "mode": "raw",
           "raw": ""
         },
-        "url": "",
+        "url": "{{url}}{{endpoint}}",
         "description": "Validates different invalid end point scenarios"
       },
       "response": []
@@ -359,7 +375,7 @@
   ],
   "variable": [
     {
-      "id": "f90456b3-214a-461a-806c-ab1be5486211",
+      "id": "51145fb4-7f4a-406a-8e2b-3574214ef858",
       "key": "url",
       "value": "",
       "type": "string",
