@@ -320,7 +320,7 @@
     },
     {
       "_postman_id": "469a2340-adfa-4b96-9723-c085db557258",
-      "name": "To validate the request with  invalid end points",
+      "name": "Verify  response by sending request with  invalid end points",
       "event": [
         {
           "listen": "test",
@@ -376,7 +376,7 @@
   ],
   "variable": [
     {
-      "id": "8a9f8d78-8f0e-4936-8c3e-e4ebd8b1924b",
+      "id": "ecd43cf1-8e36-4332-845d-595747c24221",
       "key": "url",
       "value": "",
       "type": "string",
