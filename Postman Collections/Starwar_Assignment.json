@@ -7,7 +7,7 @@
   "item": [
     {
       "_postman_id": "2803a8cd-c139-4d95-9ca0-c8d2047540ce",
-      "name": "Requset to retrieve complete list of  Starwar characters",
+      "name": "Verify requset  retrieves complete list of  Starwar characters",
       "event": [
         {
           "listen": "test",
@@ -30,7 +30,6 @@
               "pm.test(\"List contains all the characters\", function () {",
               "    ",
               "      pm.expect(jsonData.count).is.equal(data.charactercount);",
-              "      ",
               "    ",
               "});"
             ],
@@ -52,7 +51,7 @@
     },
     {
       "_postman_id": "b54dfc11-3e81-495a-ad8f-4b99cb9ec2a6",
-      "name": "Request to retrieve details of a specific Starwar character",
+      "name": "Verify that request  retrieves details of a specific Starwar character",
       "event": [
         {
           "listen": "prerequest",
@@ -377,7 +376,7 @@
   ],
   "variable": [
     {
-      "id": "57684a14-7403-4252-aef7-265ee7620d86",
+      "id": "443e6bfa-8fa2-44da-8278-b758bc52ff3f",
       "key": "url",
       "value": "",
       "type": "string",
