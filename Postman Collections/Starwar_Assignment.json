@@ -348,7 +348,7 @@
           "raw": ""
         },
         "url": "{{url}}{{endpoint}}",
-        "description": "Validates different invalid end point scenarios"
+        "description": "Test Validates request with different invalid end points  provided in data file\n\nGet request used -> Root: https://swapi.co/api\n\nResponse with status code 404(Not found) has to be generated"
       },
       "response": []
     }
@@ -377,7 +377,7 @@
   ],
   "variable": [
     {
-      "id": "20711072-3e6b-4144-bc01-ada17cd08c7a",
+      "id": "57684a14-7403-4252-aef7-265ee7620d86",
       "key": "url",
       "value": "",
       "type": "string",
