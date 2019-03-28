@@ -7,7 +7,7 @@
   "item": [
     {
       "_postman_id": "2803a8cd-c139-4d95-9ca0-c8d2047540ce",
-      "name": "Verify requset  retrieves complete list of  Starwar characters",
+      "name": "Verify Verify that requset retrieves complete list of  Starwar characters",
       "event": [
         {
           "listen": "test",
@@ -376,7 +376,7 @@
   ],
   "variable": [
     {
-      "id": "443e6bfa-8fa2-44da-8278-b758bc52ff3f",
+      "id": "a914ea05-dbe6-4293-99fe-dd9b05fb5a73",
       "key": "url",
       "value": "",
       "type": "string",
