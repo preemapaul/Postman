@@ -77,7 +77,6 @@
               "});",
               "",
               "",
-              "",
               ""
             ],
             "type": "text/javascript"
@@ -319,6 +318,21 @@
         "description": "This test request has to retrieve details of specific Starwar planet\n\nGet request used -> Root:   https://swapi.co/api\n\n                    End point:/planet/?search=value\n                    \nTest request should get success response \n\nThe response should contain only one Starwar planet.\n\nThe planet details in response should corresponds to the planet given as search parameter"
       },
       "response": []
+    },
+    {
+      "_postman_id": "469a2340-adfa-4b96-9723-c085db557258",
+      "name": "To validate invalid end points",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": "",
+        "description": "Validates different invalid end point scenarios"
+      },
+      "response": []
     }
   ],
   "event": [
@@ -345,7 +359,7 @@
   ],
   "variable": [
     {
-      "id": "860103dd-7827-4811-b2f5-319e0d11f3ed",
+      "id": "0afbebde-abaa-4f66-8895-ec434571c2c1",
       "key": "url",
       "value": "",
       "type": "string",
