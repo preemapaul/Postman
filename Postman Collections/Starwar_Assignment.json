@@ -96,7 +96,7 @@
     },
     {
       "_postman_id": "3fc5a3c7-d20b-4006-b60f-364801da8a33",
-      "name": "Request to retrieve list of Starwar Planets",
+      "name": "Verify that request  retrieves complete list of Starwar Planets",
       "event": [
         {
           "listen": "test",
@@ -376,7 +376,7 @@
   ],
   "variable": [
     {
-      "id": "a904fe26-d252-44ee-94a0-4c2eeade93fb",
+      "id": "476e6032-9124-4b02-b6af-666b7fd475ae",
       "key": "url",
       "value": "",
       "type": "string",
