@@ -136,7 +136,7 @@
     },
     {
       "_postman_id": "37766b6d-b9c9-4806-8a15-f63857f860d4",
-      "name": "Request to retieve details of specific planets",
+      "name": "Verify that request  retieves details of a specific Starwar planets",
       "event": [
         {
           "listen": "prerequest",
@@ -376,7 +376,7 @@
   ],
   "variable": [
     {
-      "id": "476e6032-9124-4b02-b6af-666b7fd475ae",
+      "id": "9aea2f27-1bd7-4016-9cce-14a37c378558",
       "key": "url",
       "value": "",
       "type": "string",
