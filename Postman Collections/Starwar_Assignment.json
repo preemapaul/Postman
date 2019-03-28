@@ -177,7 +177,7 @@
     },
     {
       "_postman_id": "67b44c87-2663-4427-abc7-98e8b5040225",
-      "name": "Request to search for specific character",
+      "name": "Verify that request  searches details for specific Starwar character",
       "event": [
         {
           "listen": "test",
@@ -376,7 +376,7 @@
   ],
   "variable": [
     {
-      "id": "32b8b8e1-f082-489c-8f40-1a5c70f8431f",
+      "id": "ccf8e473-3daa-423e-a10c-6675c4fe638d",
       "key": "url",
       "value": "",
       "type": "string",
