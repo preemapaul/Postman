@@ -242,7 +242,7 @@
     },
     {
       "_postman_id": "92da19c9-cdba-4f5c-83e3-b2a4c0d17a48",
-      "name": "Request to search for specific planet",
+      "name": "Verify that request  searches  for specific Starwar planet",
       "event": [
         {
           "listen": "prerequest",
@@ -376,7 +376,7 @@
   ],
   "variable": [
     {
-      "id": "a9bc8830-724b-4824-bc73-b406d40dc59a",
+      "id": "e1e5074f-a5cf-482c-845f-7a7db4d66ea1",
       "key": "url",
       "value": "",
       "type": "string",
