@@ -271,7 +271,7 @@
               "",
               "pm.test(\"Single planet details returned\", function () {",
               "    console.log(\"Number of planet present in response \"+jsonData.count);",
-              "    pm.expect(jsonData.count).to.eql(1);",
+              "    pm.expect(jsonData.count).to.eql(2);",
               "    ",
               "});",
               "",
@@ -376,7 +376,7 @@
   ],
   "variable": [
     {
-      "id": "1d3dfaf8-41d1-4c84-b7f8-9a3f762debf2",
+      "id": "55417924-fbd4-497f-8afe-d5fad2c16a21",
       "key": "url",
       "value": "",
       "type": "string",
